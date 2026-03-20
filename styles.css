@@ -1,0 +1,152 @@
+/* No default values for data-driven properties in :root */
+:root {
+    --header-font: 'Inter', system-ui, -apple-system, sans-serif;
+    --body-font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    overflow: hidden; /* Signage is usually non-scrolling */
+    height: 100vh;
+    width: 100vw;
+}
+
+#app-container {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+#app-container.loaded {
+    opacity: 1;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.category-section {
+    margin-bottom: 0;
+}
+
+.category-header {
+    background-color: var(--primary-color);
+    color: #000; /* Based on screenshot */
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+}
+
+.header-cols {
+    display: flex;
+    gap: 40px;
+}
+
+.header-col {
+    width: 80px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-left: 6px solid transparent;
+    background-color: #0c0c0c;
+    margin-bottom: 2px;
+}
+
+.product-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 16px;
+    border-radius: 4px;
+}
+
+.product-item:nth-child(even) {
+    background-color: #121212;
+}
+
+.product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name-brand {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
+}
+
+.brand-tag {
+    color: #888;
+    font-size: 0.8rem;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.product-stats {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.thc-value {
+    width: 80px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.price-container {
+    width: 80px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.price-value {
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.weight-value {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Specific accent colors based on brands */
+.item-puffy {
+    border-left-color: #F7B731;
+}
+
+.item-grrifters {
+    border-left-color: #38ada9;
+}

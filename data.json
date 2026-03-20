@@ -1,0 +1,188 @@
+{
+  "app_id": "aigen-1773982325128",
+  "document_version": 1,
+  "sections": {
+    "storefront": {
+      "store_name": {
+        "type": "text",
+        "label": "Store Name",
+        "value": "PUFFY & GRIFTERS"
+      }
+    },
+    "app_settings": {
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Color",
+        "value": "#F7B731"
+      },
+      "secondary_color": {
+        "type": "color",
+        "label": "Secondary Color",
+        "value": "#121212"
+      },
+      "background_color": {
+        "type": "color",
+        "label": "Background Color",
+        "value": "#000000"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#FFFFFF"
+      }
+    },
+    "categories": {
+      "type": "collection",
+      "label": "Categories",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Name" },
+        "accent_color": { "type": "color", "label": "Accent Color" }
+      },
+      "value": [
+        { "id": "cat_puffy", "name": "PUFFY", "accent_color": "#F7B731" },
+        { "id": "cat_grrifters", "name": "GRRIFTERS", "accent_color": "#F7B731" }
+      ]
+    },
+    "products": {
+      "type": "collection",
+      "label": "Products",
+      "item_schema": {
+        "id": { "type": "text", "label": "ID" },
+        "name": { "type": "text", "label": "Product Name" },
+        "brand": { "type": "text", "label": "Brand" },
+        "thc": { "type": "text", "label": "THC %" },
+        "price": { "type": "number", "label": "Price", "meta": { "format": "currency" } },
+        "weight": { "type": "text", "label": "Weight" },
+        "category": { "type": "text", "label": "Category ID" },
+        "thumbnail": {
+          "type": "file",
+          "label": "Photo",
+          "meta": { "accepted_formats": ["jpg", "png", "webp"], "path": "assets/products/" }
+        }
+      },
+      "value": [
+        {
+          "id": "prod_dz7g",
+          "name": "DIRTY ZPRITE 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "33.9%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_1.png"
+        },
+        {
+          "id": "prod_ejg7g",
+          "name": "EXOTICS JAMAICAN GELATO 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "31.81%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_2.png"
+        },
+        {
+          "id": "prod_gp7g",
+          "name": "GASTRO POP 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "31.26%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_3.png"
+        },
+        {
+          "id": "prod_g337g",
+          "name": "GELATO 33 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "31.17%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_4.png"
+        },
+        {
+          "id": "prod_gh7g",
+          "name": "GUAVA HAZE 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "30.88%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_1.png"
+        },
+        {
+          "id": "prod_pt7g",
+          "name": "PINK TAFFY 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "26.22%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_2.png"
+        },
+        {
+          "id": "prod_bd7g",
+          "name": "BLUE DREAM 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "33.15%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_3.png"
+        },
+        {
+          "id": "prod_dsg7g",
+          "name": "DIRTY SOUTH GUMBO 7G PREMIUM INDOOR FLOWER",
+          "brand": "PUFFY",
+          "thc": "36.59%",
+          "price": 45,
+          "weight": "7g",
+          "category": "cat_puffy",
+          "thumbnail": "assets/products/flower_4.png"
+        },
+        {
+          "id": "prod_blc7g",
+          "name": "BIG LEAGUE CHOO 7G PREMIUM INDOOR FLOWER",
+          "brand": "GRIFTERS",
+          "thc": "30.63%",
+          "price": 49,
+          "weight": "7g",
+          "category": "cat_grrifters",
+          "thumbnail": "assets/products/flower_1.png"
+        },
+        {
+          "id": "prod_bog7g",
+          "name": "BUBBLEGUM OG 7G PREMIUM INDOOR FLOWER",
+          "brand": "GRIFTERS",
+          "thc": "31.52%",
+          "price": 49,
+          "weight": "7g",
+          "category": "cat_grrifters",
+          "thumbnail": "assets/products/flower_2.png"
+        },
+        {
+          "id": "prod_lcg7g",
+          "name": "LEMON CHERRY GELATO 7G PREMIUM INDOOR FLOWER",
+          "brand": "GRIFTERS",
+          "thc": "30.71%",
+          "price": 49,
+          "weight": "7g",
+          "category": "cat_grrifters",
+          "thumbnail": "assets/products/flower_3.png"
+        },
+        {
+          "id": "prod_scg7g",
+          "name": "SLAP CITY GAS 7G PREMIUM INDOOR FLOWER",
+          "brand": "GRIFTERS",
+          "thc": "32.09%",
+          "price": 49,
+          "weight": "7g",
+          "category": "cat_grrifters",
+          "thumbnail": "assets/products/flower_4.png"
+        }
+      ]
+    }
+  }
+}
