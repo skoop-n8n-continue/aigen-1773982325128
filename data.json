@@ -35,30 +35,78 @@
       "type": "collection",
       "label": "Categories",
       "item_schema": {
-        "id": { "type": "text", "label": "ID" },
-        "name": { "type": "text", "label": "Name" },
-        "accent_color": { "type": "color", "label": "Accent Color" }
+        "id": {
+          "type": "text",
+          "label": "ID"
+        },
+        "name": {
+          "type": "text",
+          "label": "Name"
+        },
+        "accent_color": {
+          "type": "color",
+          "label": "Accent Color"
+        }
       },
       "value": [
-        { "id": "cat_puffy", "name": "PUFFY", "accent_color": "#F7B731" },
-        { "id": "cat_grrifters", "name": "GRRIFTERS", "accent_color": "#F7B731" }
+        {
+          "id": "cat_puffy",
+          "name": "PUFFY",
+          "accent_color": "#ea30f8"
+        },
+        {
+          "id": "cat_grrifters",
+          "name": "GRRIFTERS",
+          "accent_color": "#F7B731"
+        }
       ]
     },
     "products": {
       "type": "collection",
       "label": "Products",
       "item_schema": {
-        "id": { "type": "text", "label": "ID" },
-        "name": { "type": "text", "label": "Product Name" },
-        "brand": { "type": "text", "label": "Brand" },
-        "thc": { "type": "text", "label": "THC %" },
-        "price": { "type": "number", "label": "Price", "meta": { "format": "currency" } },
-        "weight": { "type": "text", "label": "Weight" },
-        "category": { "type": "text", "label": "Category ID" },
+        "id": {
+          "type": "text",
+          "label": "ID"
+        },
+        "name": {
+          "type": "text",
+          "label": "Product Name"
+        },
+        "brand": {
+          "type": "text",
+          "label": "Brand"
+        },
+        "thc": {
+          "type": "text",
+          "label": "THC %"
+        },
+        "price": {
+          "type": "number",
+          "label": "Price",
+          "meta": {
+            "format": "currency"
+          }
+        },
+        "weight": {
+          "type": "text",
+          "label": "Weight"
+        },
+        "category": {
+          "type": "text",
+          "label": "Category ID"
+        },
         "thumbnail": {
           "type": "file",
           "label": "Photo",
-          "meta": { "accepted_formats": ["jpg", "png", "webp"], "path": "assets/products/" }
+          "meta": {
+            "accepted_formats": [
+              "jpg",
+              "png",
+              "webp"
+            ],
+            "path": "assets/products/"
+          }
         }
       },
       "value": [
